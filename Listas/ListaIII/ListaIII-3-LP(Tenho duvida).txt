@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+int vetor[10] = {2,5,4,54,43,22,5,9,30,15};
+int num,i,cont=0;
+scanf("%d",&num);
+for(i=0;i<=10;i++)
+    if(num!=vetor[i]){
+        cont++;
+    }
+    if (cont>1){
+        printf("Nao encontrado!");
+    }
+for(i=0;i<=10;i++)
+    if(num==vetor[i]){
+        printf("O numero digitado %d esta no [%d] posicao do vetor!",num,i);
+        break;
+    }
+    }
+
+//Como faço para para de executar o programa depois de ter feito o resultado.

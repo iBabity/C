@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int prima(int numero){
+    int cont = 0,i;
+    for(i=1;i<=numero;i++){
+        if(numero%i==0){
+            cont++;
+        }
+    }
+    if (cont == 2){
+        return 1;
+    }
+    else{
+        return 0;
+    }
+}
+int main(void)
+{
+
+    int numero;
+    printf("Digite um numero:");
+    scanf("%d",&numero);
+
+    if (prima(numero) == 1){
+        printf("é primo!");
+    }
+    else{
+        printf("nao");
+    }
+}

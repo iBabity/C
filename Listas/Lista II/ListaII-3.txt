@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+
+int main(){
+    int a;
+    scanf("%d",&a);
+    divisores(a);
+    return 0;
+}
+
+int divisores (int a){
+    int cont=0,i;
+    for (i=1;i<=a;i++){
+        if (a%i==0){
+            cont++;
+    }
+    }
+    printf("%d possui %d divisores.",a,cont);
+}

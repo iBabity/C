@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+#define MAX 100
+
+struct dados {
+    char nome[20];
+    double nota1;
+    double nota2;
+} pessoa[10];
+
+
+int main()
+{
+    float media;
+    int i;
+
+    for(i = 0; i < 2; i++){
+        scanf("%s %d %d", &pessoa[i].nome, &pessoa[i].nota1, &pessoa[i].nota2);
+    }
+
+    for(int i = 0; i < 2; i++){
+        // media = (pessoa[i].nota1 + pessoa[i].nota2) / 2;
+        printf("nome = %s\nnota1 = %lf\nnota2 = %lf", pessoa[i].nome, pessoa[i].nota1, pessoa[i].nota2 );
+}
+}

@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int a,b;
+    scanf("%d",&a);
+    b=fat(a);
+    printf("%d",b);
+}
+int fat(int a){
+    if (a==1){
+        return 1;
+    }
+    else{
+        return a*fat(a-1);
+    }
+}
+

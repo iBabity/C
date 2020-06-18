@@ -1,0 +1,31 @@
+
+#include<stdio.h>
+int main(){
+
+	int repete,i=0,k=0,j=0,ocorre=0;
+	float sequencia[50];
+
+	printf("Digite a quantidade de numeros que terá a sequencia: ");
+	scanf("%d",&repete);
+	for (i=0;i<repete;i++){
+		printf("Digite o %d° número da sequecia: ",i+1);
+		scanf("%f",&sequencia[i]);
+	}
+	for (i=0;i<repete;i++){
+		k=0;
+		j=0;
+		ocorre=0;
+		for(j=0;j<repete;k++){
+			j++;
+			if(sequencia[i]==sequencia[k]){
+				ocorre++;
+				if (ocorre>1){
+					sequencia[k]=99999999999999991;
+				}
+			}
+		}
+		if (sequencia[i]>=-9999999999999&&sequencia[i]<=9999999999999999){
+			printf("%.1f ocorre %d vezes\n",sequencia[i],ocorre);
+		}
+	}
+}

@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+int ler();
+int multiplicar(int a,int b);
+void imprimir(resultado);
+
+void imprimir(resultado){
+    printf("Resultado:%d",resultado);
+}
+int ler(){
+int a,b;
+scanf("%d",&a);
+scanf("%d",&b);
+multiplicar(a,b);
+}
+
+int multiplicar(int a,int b){
+int resultado;
+resultado=a*b;
+imprimir(resultado);
+}
+
+int main()
+{
+
+ler();
+}

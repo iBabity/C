@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1529498920 source:g:\fatec\linguagem de programação\3ºlp\listas\listavii\listaviieder\ex2.c
+	<stdio.h>
+	<stdlib.h>
+
+1529498962 source:g:\fatec\linguagem de programação\3ºlp\listas\listavii\listaviieder\main.c
+	<stdio.h>
+	<stdlib.h>
+

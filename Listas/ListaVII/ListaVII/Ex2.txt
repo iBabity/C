@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    FILE *p;
+
+    int i;
+    char c;
+    char option[1];
+
+    if( (p = fopen("dados.txt", "r" ) ) == NULL ){
+        printf("ERRO ao abrir o arquivo!\n");
+        exit(1);
+    }
+
+    while( !feof(p)){
+        c = getc(p);
+        printf("%c", c);
+    }
+
+    getch();
+    fclose(p);
+}

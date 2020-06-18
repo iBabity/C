@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int a,b,c;
+    scanf("%d",&a);
+    scanf("%d",&b);
+    scanf("%d",&c);
+
+    triangulo(a,b,c);
+    return 0;
+}
+int triangulo(int a,int b,int c){
+    if((a==b) && a==c){
+        printf("Triangulo Equilatero!");
+    }
+    if ((a==b) || (a==c) || (b==c)){
+        printf("Triangulo Isoceles!");
+    }
+    if ((a!=b)&&(a!=c)){
+        printf("Triangulo Escaleno");
+    }
+}

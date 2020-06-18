@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+void SomaDePrimos();
+int main(void){
+    int a,b=1;
+    while (b!=0)
+{
+    printf("Numero: \n");
+    scanf("%d",&a);
+
+    if (a==0)
+        b==0;
+
+    SomaDePrimos(a);
+}
+}
+void SomaDePrimos(int a){
+int count=0, ate=100,x,aux=0;
+for(x=2;x<ate;x++){
+    if((x == 2) || (x%2!=0)){
+        aux=aux+x;
+        printf("%d ",x);
+        count++;
+    }
+    else if (count==a){
+        break;
+    }
+    else if (a==0)
+        break;
+}
+printf("= %d \n \n",aux);
+}

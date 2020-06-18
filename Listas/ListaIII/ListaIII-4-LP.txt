@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+int vetor1[5];
+int vetor2[8];
+int i,k;
+
+printf("Valores do primeiro vetor:\n");
+for(i=0;i<5;i++){
+    scanf("%d",&vetor1[i]);
+}
+printf("Valores do segundo vetor:\n");
+
+for(k=0;k<8;k++){
+    scanf("%d",&vetor2[k]);
+}
+printf("\n");
+
+for(i=0;i<5;i++){
+    for(k=0;k<8;k++)
+    if(vetor1[i]==vetor2[k]){
+        printf("%d ",vetor1[i]);
+            }
+    }
+}

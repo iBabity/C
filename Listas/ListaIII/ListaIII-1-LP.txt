@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main(){
+int x,i;
+scanf("%d",&x);
+int vetor[x];
+    for(i=1;i<=x;i++){
+        scanf("%d",&vetor[i]);
+    }
+        for(i=x;i>0;i--){
+            printf("%d ",vetor[i]);
+        }
+}

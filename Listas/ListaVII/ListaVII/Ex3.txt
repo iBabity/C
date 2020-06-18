@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    char str[1000];
+    char c;
+    FILE *p;
+    int i = 0;
+
+    p = fopen("main.c", "r" );
+
+    if( p == NULL ){
+        printf("ERRO ao abrir o arquivo!\n");
+        exit(1);
+    }
+
+
+    do{
+        printf("linha %d : %s", i, fgets(str, 1000, p));
+        i++;
+    }while( !feof(p));
+
+    fclose(p);
+}

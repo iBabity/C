@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+void impar(int a){
+    if(a%2==0){
+        printf("É par");
+    }
+    else{
+        printf("É impar");
+    }
+}
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    impar(a);
+}

@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+#define MAX 100
+
+int main()
+{
+FILE *p;
+    char str[MAX];
+
+    p = fopen("notepad.txt", "w");
+
+    if( p == NULL ){
+        printf("404 ERROR");
+        exit(1);
+    }
+
+    do{
+        gets(str);
+        fputs(str, p);
+
+    }while(strcmp(str, "FIM") !=  0);
+
+fclose(p);
+}

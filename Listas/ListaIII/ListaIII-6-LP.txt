@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+printf("Digite a quantidade de voltas:");
+int num,i;
+scanf("%d",&num);
+
+float vetor[num];
+printf("Digite o tempo das voltas:\n");
+for(i=0;i<num;i++){
+    scanf("%f",&vetor[i]);
+    }
+float melhor;
+int volta=0;
+melhor=vetor[0];
+for(i=0;i<num;i++){
+    if(melhor>vetor[i]){
+       melhor=vetor[i];
+       volta=i;
+        }
+    }
+int media=0;
+float soma=0;
+for(i=0;i<num;i++){
+    soma=soma+vetor[i];
+}
+media=soma/num;
+
+printf("Melhor tempo:%f \n",melhor);
+printf("Volta do melhor tempo:%d \n",volta);
+printf("Tempo medio das voltas:%d ",media);
+
+}
